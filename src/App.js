@@ -6,9 +6,9 @@ import useBooksContext from "./hooks/use-books-context";
 function App() {
   const {fetchBooks} = useBooksContext();
 
-  useEffect(async () => {
+  useEffect( () => {
     fetchBooks();
-  }, [])
+  }, [fetchBooks]);
 
   return (
     <div className="app">
